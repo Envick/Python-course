@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+  box-sizing: border-box;
+}
+.wrapper{
+  width: 1440px;
+  margin: 0 auto;
+}
+.container{
+  width: 1220px;
+  height: 100%;
+  margin: 0 auto;
+}
+//кнопка нужна еще в других местах, поэтому отдельно
+.enroll{
+  width: 190px;
+  height: 50px;
+  background: #FDCC4F;
+  border: none;
+  border-radius: 3px;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.bold-python-course{
+  font-weight: bold !important;
+}
+.introSection{
+  width: 100%;
+  height: 700px;
+  background:#fff;
+  &__content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__block-left{
+    display: flex;
+    width: 361px;
+    flex-direction: column;
+    h1{
+      font-size: 96px;
+    }
+    h3{
+      font-size: 33px;
+      letter-spacing: 0.0025em;
+      margin-bottom: 10px;
+    }
+    p{
+      font-family: 'Fira Sans', sans-serif;
+      position: relative;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.005em;
+      color: #5A5A5A;
+      margin-bottom: 36px;
+    }
+    span{
+      position: absolute;
+      right: 15px;
+      bottom: 0;
+      width: 73px;
+      height: 7px;
+      background: #6C63FF;
+    }
+  }
+  &__block-right{
+    width: 610px;
+    height: 453px;
+    background-image: url(/images/top-display.jpg);
+  }
+}
+.learnSection{
+  width: 100%;
+  height: 700px;
+  background: #6C63FF;
+  padding-top: 65px;
+  padding-bottom: 70px;
+  &__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+    h2{
+      color: #FFFFFF;
+      font-weight: bold;
+      font-size: 34px;
+      line-height: 45px;
+      margin-bottom: 25px;
+    }
+    h3{
+      font-family: 'Fira Sans', serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      span{
+        width: 115px;
+        height: 7px;
+        background: #FDCC4F;
+        position: absolute;
+        bottom: 0;
+        left: 67px;
+      }
+    }
+    span{
+      font-family: 'Fira Sans'; 
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  }
+  &__arrow1{
+    position: absolute;
+    left: 201px;
+    top: 335px;
+  }
+  &__arrow2{
+    position: absolute;
+    left: 137px;
+    top: 90px;
+  }
+  &__arrow3{
+    position: absolute;
+    right: 136px;
+    top: 245px
+  }
+  &__arrow4{
+    position: absolute;
+    right: 300px;
+    top: 250px;
+  }
+  &__text1{
+    position: absolute;
+    left: 40px;
+    top: 265px;
+  }
+  &__text2{
+    position: absolute;
+    left: 390px;
+    top: 415px;
+  }
+  &__text3{
+    position: absolute;
+    right: 316px;
+    top: 257px;
+  }
+  &__text4{
+    position: absolute;
+    right: 45px;
+    top: 185px;
+  }
+}
+.famousSection{
+  width: 100%;
+  height: 569px;
+  border-bottom: 1px solid #D0CDE1;
+  padding-bottom: 100px;
+  padding-top: 65px;
+  &__content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__top-desc{
+    h2{
+      font-size: 34px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    p{
+      text-align: center;
+      color: #3F3D56;
+      font-family: 'Fira Sans';
+      font-weight: 300;
+    }
+    .top-text{
+      margin-bottom: 30px;
+    }
+  }
+  &__icons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.studySection{
+  width: 100%;
+  height: 740px;
+  padding-top: 65px;
+  &__content{
+    h2{
+      font-size: 34px;
+      text-align: center;
+      margin-bottom: 79px;
+    }
+  }
+  &__description{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__firstContent{
+    width: 546px;
+    height: 465px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__secondContent{
+    width: 546px;
+    height: 465px;
+    background-image: url(images/picTIme.jpg);
+  }
+  &__month{
+    width: 322px;
+    padding-left: 25px;
+    background-image: url(images/spot2.svg);
+    background-repeat: no-repeat;
+    h3{
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+    }
+    span{
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+    }
+  }
+  &__project{
+    width: 322px;
+    padding-left: 25px;
+    background-image: url(images/spot1.svg);
+    background-repeat: no-repeat;
+    h3{
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+    }
+    span{
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+    }
+  }
+}
+.lectionSection{
+  width: 100%;
+  height: 670px;
+  &__content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__rectangles{
+    background-image: url(images/picWeek.jpg);
+    width: 429px;
+    height: 378px;
+  }
+  &__lectionDesc{
+    width: 332px;
+    background-image: url(images/spot3.svg);
+    background-repeat: no-repeat;
+    background-position: 20% 50%;
+    h3{
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+    span{
+      font-family:' Fira Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      color: #3F3D56;
+    }
+  }
+}
+.practiceSection{
+  width: 100%;
+  height: 700px;
+  padding-top: 60px;
+  &__content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__description{
+    width: 542px;
+    height: 555px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    span{
+      color: #3F3D56;
+      font-family: 'Fira Sans';
+      font-weight: 300;
+    }
+    h3{
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+    }
+  }
+  &__practice{
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    padding-left: 25px;
+    height: 130px;
+    background-image: url(images/spot4.svg);
+    background-repeat: no-repeat;
+  }
+  &__support{
+    padding-left: 25px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(images/spot5.svg);
+    background-repeat: no-repeat;
+    background-position: 37% 50%;
+  }
+  &__phoneImage{
+    width: 542px;
+    height: 555px;
+    background-image: url(images/picPractice.jpg);
+  }
+}
+.moneySection{
+  width: 100%;
+  height: 700px;
+  padding-top: 65px;
+  &__content{
+    width: 100%;
+    height: 100%;
+    h2{
+      text-align: center;
+      font-size: 34px;
+      padding-bottom: 79px;
+    }
+  }
+  &__description{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__moneyImage{
+    width: 545px;
+    height: 411px;
+    background-image: url(images/undraw.jpg);
+  }
+  &__price{
+    width: 545px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Fira Sans';
+    font-weight: 300;
+    h3{
+      text-align: center;
+      font-weight: 600;
+      font-size: 38px;
+      color: #3F3D56;
+    }
+    h5{
+      font-weight: 300;
+      color: #3F3D56;
+      padding-bottom: 10px;
+    }
+    span{
+      text-align: center;
+      color: #B1AEBF;
+      font-size: 12px;
+      padding-bottom: 40px;
+    }
+  }
+}
