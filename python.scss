@@ -6,15 +6,6 @@
   font-family: 'Roboto Slab', serif;
   box-sizing: border-box;
 }
-.wrapper{
-  width: 1440px;
-  margin: 0 auto;
-}
-.container{
-  width: 1220px;
-  height: 100%;
-  margin: 0 auto;
-}
 //кнопка нужна еще в других местах, поэтому отдельно
 .enroll{
   width: 190px;
@@ -29,31 +20,80 @@
   color: #FFFFFF;
   cursor: pointer;
 }
+// also bold weight need for several parts
 .bold-python-course{
   font-weight: bold !important;
 }
+.desktop-only{
+  @media (max-width: 1221px){
+    display: none !important;
+  }
+}
+.desktop-tablet-only{
+  @media (max-width: 993px){
+    display: none !important;
+  }
+}
+.wrapper{
+  width: 1440px;
+  margin:0 auto;
+  @media (max-width: 1441px){
+    width: 100%;
+  }
+}
+.container{
+  width: 1220px;
+  height: 100%;
+  margin: 0 auto;
+  @media (max-width: 1221px){
+    width: 992px;
+  }
+  @media (max-width: 993px){
+    width: 100%;
+  }
+}
+
 .introSection{
   width: 100%;
   height: 700px;
   background:#fff;
+  @media (max-width: 993px){
+    height: auto;
+    padding-bottom: 80px;
+  }
   &__content{
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 993px){
+      flex-direction: column;
+      justify-content: flex-start;
+      // min-height: 100%\;
+    }
   }
   &__block-left{
     display: flex;
     width: 361px;
     flex-direction: column;
+    @media (max-width: 993px){
+      align-items: center;
+      width: 100%;
+    }
     h1{
       font-size: 96px;
+      @media (max-width: 993px){
+        font-size: 70px;
+      }
     }
     h3{
       font-size: 33px;
       letter-spacing: 0.0025em;
       margin-bottom: 10px;
+      @media (max-width: 993px){
+        font-size: 25px;
+      }
     }
     p{
       font-family: 'Fira Sans', sans-serif;
@@ -64,6 +104,9 @@
       letter-spacing: 0.005em;
       color: #5A5A5A;
       margin-bottom: 36px;
+      @media (max-width: 993px){
+        font-size: 14px;
+      }
     }
     span{
       position: absolute;
@@ -78,6 +121,12 @@
     width: 610px;
     height: 453px;
     background-image: url(images/top-display.jpg);
+    @media (max-width: 993px){
+      width: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
   }
 }
 .learnSection{
@@ -99,6 +148,7 @@
       font-size: 34px;
       line-height: 45px;
       margin-bottom: 25px;
+      text-align: center;
     }
     h3{
       font-family: 'Fira Sans', serif;
@@ -165,6 +215,14 @@
     position: absolute;
     right: 45px;
     top: 185px;
+    @media (max-width: 1221px){
+      top: 200px;
+    }
+  }
+  &__text{
+    @media (max-width: 993px){
+      position: static;
+    }
   }
 }
 .famousSection{
@@ -208,11 +266,18 @@
   width: 100%;
   height: 740px;
   padding-top: 65px;
+  @media (max-width: 993px){
+    height: auto;
+    padding-bottom: 30px;
+  }
   &__content{
     h2{
       font-size: 34px;
       text-align: center;
       margin-bottom: 79px;
+      @media (max-width: 993px){
+        margin-bottom: 40px;
+      }
     }
   }
   &__description{
@@ -220,6 +285,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 993px){
+      flex-direction: column;
+    }
   }
   &__firstContent{
     width: 546px;
@@ -228,6 +296,10 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    @media (max-width: 993px){
+      height: auto;
+      width: 100%;
+    }
   }
   &__secondContent{
     width: 546px;
@@ -239,6 +311,12 @@
     padding-left: 25px;
     background-image: url(images/spot2.svg);
     background-repeat: no-repeat;
+    @media (max-width: 993px){
+      text-align: center;
+      background-position: 50% 50%;
+      margin-bottom: 20px;
+      padding: 0;
+    }
     h3{
       font-family: 'Fira Sans';
       font-style: normal;
@@ -257,6 +335,11 @@
     padding-left: 25px;
     background-image: url(images/spot1.svg);
     background-repeat: no-repeat;
+    @media (max-width: 993px){
+      text-align: center;  
+      background-position: 50% 50%; 
+      padding: 0; 
+    }
     h3{
       font-family: 'Fira Sans';
       font-style: normal;
@@ -274,12 +357,18 @@
 .lectionSection{
   width: 100%;
   height: 670px;
+  @media (max-width: 993px){
+    height: auto;
+  }
   &__content{
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 993px){
+      flex-direction: column;
+    }
   }
   &__rectangles{
     background-image: url(images/picWeek.jpg);
@@ -291,6 +380,10 @@
     background-image: url(images/spot3.svg);
     background-repeat: no-repeat;
     background-position: 20% 50%;
+    @media (max-width: 993px){
+      text-align: center;
+      background-position: 50% 50%;
+    }
     h3{
       font-family: 'Fira Sans';
       font-style: normal;
@@ -311,12 +404,19 @@
   width: 100%;
   height: 700px;
   padding-top: 60px;
+  @media (max-width: 993px){
+    height: auto;
+    padding-top: 30px;
+  }
   &__content{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 993px){
+      flex-direction: column-reverse;
+    }
   }
   &__description{
     width: 542px;
@@ -324,6 +424,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media (max-width: 993px){
+      width: 100%;
+      height: auto;
+    }
     span{
       color: #3F3D56;
       font-family: 'Fira Sans';
@@ -343,6 +447,13 @@
     height: 130px;
     background-image: url(images/spot4.svg);
     background-repeat: no-repeat;
+    @media (max-width: 993px){
+      text-align: center;
+      padding: 0;
+      background-position: 50% 10%;
+      height: auto;
+      margin-bottom: 30px;
+    }
   }
   &__support{
     padding-left: 25px;
@@ -353,6 +464,12 @@
     background-image: url(images/spot5.svg);
     background-repeat: no-repeat;
     background-position: 37% 50%;
+    @media (max-width: 993px){
+      text-align: center;
+      padding: 0;
+      background-position: 50% 50%;
+      height: auto;
+    }
   }
   &__phoneImage{
     width: 542px;
@@ -378,11 +495,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 993px){
+      flex-direction: column;
+    }
   }
   &__moneyImage{
     width: 545px;
     height: 411px;
     background-image: url(images/undraw.jpg);
+    @media (max-width: 993px){
+      width: 100%;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+    @media (max-width: 360px){
+      width: 100%;
+      background-position: 30% 50%;
+    }
   }
   &__price{
     width: 545px;
@@ -391,9 +520,14 @@
     align-items: center;
     font-family: 'Fira Sans';
     font-weight: 300;
+    @media (max-width: 993px){
+      width: 100%;
+    }
     h3{
       text-align: center;
+      font-family: 'Fira Sans';
       font-weight: 600;
+      font-size: 38px;
       font-size: 38px;
       color: #3F3D56;
     }
